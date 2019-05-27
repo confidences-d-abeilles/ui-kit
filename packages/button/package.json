@@ -1,0 +1,24 @@
+{
+  "name": "@cda/button",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "description": "This is a simple react button",
+  "main": "index.js",
+  "dependencies": {
+    "loose-envify": "^1.4.0",
+    "prop-types": "^15.7.2",
+    "object-assign": "^4.1.1",
+    "js-tokens": "^4.0.0",
+    "react": "^16.8.6",
+    "scheduler": "^0.13.6",
+    "react-is": "^16.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
