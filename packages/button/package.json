@@ -3,10 +3,14 @@
   "version": "0.0.8",
   "main": "lib/index.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "gitHead": "f99dfba40c70467369e4ecfa8cd26033b323176f"
 }
