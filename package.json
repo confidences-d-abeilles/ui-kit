@@ -19,8 +19,7 @@
     "publish": "lerna publish",
     "diff": "lerna diff",
     "ls": "lerna ls",
-    "link": "lerna link",
-    "version": "lerna version"
+    "link": "lerna link"
   },
   "version": "0.0.6"
 }
