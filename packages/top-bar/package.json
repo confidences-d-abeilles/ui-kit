@@ -1,0 +1,10 @@
+{
+  "name": "@cda/top-bar",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "react": "^16.8.6"
+  }
+}

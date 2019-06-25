@@ -16,9 +16,11 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "push": "lerna publish",
+    "publish": "lerna publish",
     "diff": "lerna diff",
-    "ls": "lerna ls"
+    "ls": "lerna ls",
+    "link": "lerna link",
+    "version": "lerna version"
   },
   "version": "0.0.3"
 }

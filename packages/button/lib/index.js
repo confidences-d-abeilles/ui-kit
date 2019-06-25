@@ -10,7 +10,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var _default = function _default() {
-  return _react["default"].createElement("p", null, "Test2");
+  return _react["default"].createElement("p", null, "Test");
 };
 
 exports["default"] = _default;
