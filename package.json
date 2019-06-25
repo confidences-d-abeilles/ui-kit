@@ -1,5 +1,6 @@
 {
-  "name": "@cda/ui-kit",
+  "name": "root",
+  "private": true,
   "license": "MIT",
   "workspaces": [
     "packages/*"
