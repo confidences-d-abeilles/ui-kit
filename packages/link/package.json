@@ -1,0 +1,16 @@
+{
+  "name": "@cda/link",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "react": "^16.8.6",
+    "react-fontawesome": "^1.6.1",
+    "react-router-dom": "^5.0.1"
+  }
+}
