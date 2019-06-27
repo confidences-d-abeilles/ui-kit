@@ -6,7 +6,7 @@ export const Button = withTheme(styled('button')`
   margin: 0.125rem 0.5rem;
   display: inline-block;
   padding: 0.25rem 1rem;
-  border: none;
+  border: ${({ primary, theme }) => primary ? 'none' : `solid 1px ${theme.colors.primary}`};
   transition: all 0.125s;
   cursor: pointer;
   text-align: center;
@@ -16,8 +16,8 @@ export const Button = withTheme(styled('button')`
     outline: none;
   }
   
-  color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.primary};
+  background-color: ${({ theme, primary }) => primary ? theme.colors.black : 'transparent'};
 
   &:hover, &:focus, &:active {
     background-color: ${({ theme }) => theme.colors.primary};
