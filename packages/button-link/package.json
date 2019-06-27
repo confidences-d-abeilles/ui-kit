@@ -1,0 +1,13 @@
+{
+  "name": "@cda/button-link",
+  "version": "0.1.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
+  },
+  "gitHead": "f99dfba40c70467369e4ecfa8cd26033b323176f"
+}
