@@ -20,7 +20,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js --watch",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "publish": "lerna publish",
+    "golive": "lerna publish",
     "diff": "lerna diff",
     "ls": "lerna ls",
     "link": "lerna link",
