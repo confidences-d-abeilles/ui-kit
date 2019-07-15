@@ -10,6 +10,10 @@
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
     "lerna": "^3.15.0",
     "webpack": "^4.35.3"
   },
@@ -19,7 +23,13 @@
     "publish": "lerna publish",
     "diff": "lerna diff",
     "ls": "lerna ls",
-    "link": "lerna link"
+    "link": "lerna link",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "version": "0.0.6"
+  "version": "0.0.6",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
