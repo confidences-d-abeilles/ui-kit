@@ -25,7 +25,7 @@
     "ls": "lerna ls",
     "link": "lerna link",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs"
   },
   "version": "0.0.6",
   "dependencies": {
