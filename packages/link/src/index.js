@@ -27,7 +27,7 @@ const MyLink = ({
     &nbsp;
     <FontAwesome name="external-link" />
   </a>
-) : <StyleLink to={url} className={className}>{children || url}</StyleLink>);
+) : <StyleLink to={url} className={className} {...props}>{children || url}</StyleLink>);
 
 MyLink.propTypes = {
   external: PropTypes.bool,

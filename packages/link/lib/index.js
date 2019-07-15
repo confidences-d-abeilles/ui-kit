@@ -52,10 +52,10 @@ var MyLink = function MyLink(_ref) {
     className: className
   }, props), children || url, "\xA0", _react["default"].createElement(_reactFontawesome["default"], {
     name: "external-link"
-  })) : _react["default"].createElement(StyleLink, {
+  })) : _react["default"].createElement(StyleLink, _extends({
     to: url,
     className: className
-  }, children || url);
+  }, props), children || url);
 };
 
 MyLink.propTypes = {
