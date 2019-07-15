@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Button } from '@cda/button';
 
-import theme from '../theme';
+import theme from '@cda/theme';
 
 storiesOf('Button', module)
   .add('primary', () => (

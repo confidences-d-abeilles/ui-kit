@@ -1,0 +1,9 @@
+{
+  "name": "@cda/theme",
+  "version": "0.2.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

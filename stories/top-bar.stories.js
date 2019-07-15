@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 
 import TopBar from '@cda/top-bar';
 
-import theme from '../theme';
+import theme from '../packages/theme/src/theme';
 
 storiesOf('TopBar', module)
   .add('primary', () => (
