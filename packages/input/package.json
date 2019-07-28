@@ -1,0 +1,14 @@
+{
+  "name": "@cda/input",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "react": "^16.8.6"
+  }
+}
