@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Button = void 0;
+exports["default"] = exports.Button = void 0;
 
 var _styled = _interopRequireDefault(require("@emotion/styled"));
 
@@ -45,6 +45,8 @@ var Button = (0, _emotionTheming.withTheme)((0, _styled["default"])('button')(_t
   return theme.colors.white;
 }));
 exports.Button = Button;
+var _default = Button;
+exports["default"] = _default;
 Button.propTypes = {
   primary: _propTypes["default"].bool
 };

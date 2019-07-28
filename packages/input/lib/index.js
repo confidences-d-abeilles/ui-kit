@@ -12,7 +12,7 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n"]);
+  var data = _taggedTemplateLiteral(["\n  &[type=\"text\"], &[type=\"email\"], &[type=\"password\"], &[type=\"tel\"] {\n    width: 100%;\n    padding: 0.25rem 0.5rem;\n    margin: 0.5rem;\n    border-style: solid;\n    border-color: ", ";\n    border-width: 0 0 1px 0;\n    background: none;\n    &:focus {\n      margin-bottom: calc(0.5rem - 1px);\n      border-width: 0 0 2px 0;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -23,6 +23,9 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var StyledInput = (0, _styled["default"])('input')(_templateObject());
+var StyledInput = (0, _styled["default"])('input')(_templateObject(), function (_ref) {
+  var theme = _ref.theme;
+  return theme.colors.black;
+});
 var _default = StyledInput;
 exports["default"] = _default;

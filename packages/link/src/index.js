@@ -21,13 +21,12 @@ const MyLink = ({
     target="_blank"
     rel="noopener noreferrer"
     className={className}
-    {...props}
   >
     {children || url}
     &nbsp;
     <FontAwesome name="external-link" />
   </a>
-) : <StyleLink to={url} className={className} {...props}>{children || url}</StyleLink>);
+) : <StyleLink to={url} className={className}>{children || url}</StyleLink>);
 
 MyLink.propTypes = {
   external: PropTypes.bool,

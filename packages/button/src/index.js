@@ -25,6 +25,8 @@ export const Button = withTheme(styled('button')`
   }
 `);
 
+export default Button;
+
 Button.propTypes = {
   primary: PropTypes.bool,
 };

@@ -17,8 +17,6 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
@@ -45,17 +43,17 @@ var MyLink = function MyLink(_ref) {
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ["url", "to", "external", "className", "children"]);
 
-  return external ? _react["default"].createElement("a", _extends({
+  return external ? _react["default"].createElement("a", {
     href: url || to,
     target: "_blank",
     rel: "noopener noreferrer",
     className: className
-  }, props), children || url, "\xA0", _react["default"].createElement(_reactFontawesome["default"], {
+  }, children || url, "\xA0", _react["default"].createElement(_reactFontawesome["default"], {
     name: "external-link"
-  })) : _react["default"].createElement(StyleLink, _extends({
+  })) : _react["default"].createElement(StyleLink, {
     to: url,
     className: className
-  }, props), children || url);
+  }, children || url);
 };
 
 MyLink.propTypes = {
