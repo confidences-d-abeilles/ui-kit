@@ -14,19 +14,20 @@ const MyLink = ({
                   external,
                   className,
                   children,
-                  ...props
+                  'data-cy': dataCy,
                 }) => (external ? (
   <a
     href={url || to}
     target="_blank"
     rel="noopener noreferrer"
+    data-cy={dataCy}
     className={className}
   >
     {children || url}
     &nbsp;
     <FontAwesome name="external-link" />
   </a>
-) : <StyleLink to={url} className={className}>{children || url}</StyleLink>);
+) : <StyleLink to={url} className={className} data-cy={dataCy}>{children || url}</StyleLink>);
 
 MyLink.propTypes = {
   external: PropTypes.bool,

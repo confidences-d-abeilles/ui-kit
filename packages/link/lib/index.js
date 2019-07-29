@@ -17,10 +17,6 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n"]);
 
@@ -41,18 +37,19 @@ var MyLink = function MyLink(_ref) {
       external = _ref.external,
       className = _ref.className,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["url", "to", "external", "className", "children"]);
-
+      dataCy = _ref['data-cy'];
   return external ? _react["default"].createElement("a", {
     href: url || to,
     target: "_blank",
     rel: "noopener noreferrer",
+    "data-cy": dataCy,
     className: className
   }, children || url, "\xA0", _react["default"].createElement(_reactFontawesome["default"], {
     name: "external-link"
   })) : _react["default"].createElement(StyleLink, {
     to: url,
-    className: className
+    className: className,
+    "data-cy": dataCy
   }, children || url);
 };
 
