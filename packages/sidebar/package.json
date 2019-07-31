@@ -1,0 +1,16 @@
+{
+  "name": "@cda/sidebar",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "public": true
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.20",
+    "@fortawesome/free-solid-svg-icons": "^5.10.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "react": "^16.8.6",
+    "react-router": "^5.0.1"
+  }
+}
