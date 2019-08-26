@@ -1,24 +1,23 @@
 import styled from '@emotion/styled';
 
 export const Item = styled.div`
-  padding: ${({ noGutter }) => (noGutter ? 0 : '1rem 5rem')};
-  flex: ${({ flex }) => flex || '1 25rem'} ;
-  align-self: ${({ alignSelf }) => alignSelf || 'center'};
+  padding: ${({ gutters }) => (gutters ? '1rem 5rem' : 0)};
+  flex: ${({ flex }) => flex};
+  align-self: ${({ alignSelf }) => alignSelf || 'initial'};
   text-align: ${({ textAlign }) => textAlign};
 `;
 
 export const Columns = styled.div`
   display: flex;
   flex: 1 25rem;
-  flex-direction: columns;
-  justify-content: center;
-  align-items: ${({ alignItems }) => alignItems || 'center'};
+  flex-direction: column;
+  justify-content: ${({ justifyContent }) => justifyContent || 'initial'};
+  align-items: ${({ alignItems }) => alignItems || 'initial'};
 `;
 
 export const Rows = styled.div`
   display: flex;
-  flex-direction: rows;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: ${({ justifyContent }) => justifyContent || 'initial'};
-  align-items: ${({ alignItems }) => alignItems || 'center'};
+  align-items: ${({ alignItems }) => alignItems || 'initial'};
 `;

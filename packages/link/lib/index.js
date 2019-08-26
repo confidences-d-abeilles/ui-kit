@@ -9,16 +9,24 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _reactFontawesome = _interopRequireDefault(require("react-fontawesome"));
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styled = _interopRequireDefault(require("@emotion/styled"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  color: black;\n  text-decoration: none;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n"]);
+  var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n  color: black;\n  text-decoration: none;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -30,32 +38,30 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var StyleLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject());
+var StyledAnchor = (0, _styled["default"])('a')(_templateObject2());
 
 var MyLink = function MyLink(_ref) {
-  var url = _ref.url,
-      to = _ref.to,
+  var to = _ref.to,
       external = _ref.external,
       className = _ref.className,
       children = _ref.children,
       dataCy = _ref['data-cy'];
-  return external ? _react["default"].createElement("a", {
-    href: url || to,
+  return external ? _react["default"].createElement(StyledAnchor, {
+    href: to,
     target: "_blank",
     rel: "noopener noreferrer",
     "data-cy": dataCy,
     className: className
-  }, children || url, "\xA0", _react["default"].createElement(_reactFontawesome["default"], {
-    name: "external-link"
-  })) : _react["default"].createElement(StyleLink, {
-    to: url,
+  }, children || url, "\xA0") : _react["default"].createElement(StyleLink, {
+    to: to,
     className: className,
     "data-cy": dataCy
-  }, children || url);
+  }, children || to);
 };
 
 MyLink.propTypes = {
   external: _propTypes["default"].bool,
-  url: _propTypes["default"].string.isRequired,
+  to: _propTypes["default"].string.isRequired,
   className: _propTypes["default"].string,
   children: _propTypes["default"].node
 };

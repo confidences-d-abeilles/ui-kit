@@ -10,6 +10,7 @@ export const Button = withTheme(styled('button')`
   transition: all 0.125s;
   cursor: pointer;
   text-align: center;
+  font-size: 1rem;
 
   &:hover, &:focus, &:active {
     text-decoration: none;

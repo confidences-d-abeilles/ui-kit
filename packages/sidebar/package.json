@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "publishConfig": {
-    "public": true
+    "access": "public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
@@ -12,5 +12,6 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "react": "^16.8.6",
     "react-router": "^5.0.1"
-  }
+  },
+  "gitHead": "069990d5439e6c5db2423e92e0ba9748b2a5909c"
 }
