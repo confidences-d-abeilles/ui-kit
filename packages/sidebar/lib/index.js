@@ -28,7 +28,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  min-width: 15rem;\n  width: ", ";\n  overflow: visible;\n  margin-right: 1rem;\n  \n  div {\n    z-index: 10;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: ", ";\n  overflow: visible;\n  \n  div {\n    z-index: 10;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -48,7 +48,7 @@ var StyledLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject2(
   return theme.colors.primary;
 }, function (_ref3) {
   var compact = _ref3.compact;
-  return compact ? '3rem' : 'auto';
+  return compact ? '5rem' : 'auto';
 }, function (_ref4) {
   var theme = _ref4.theme;
   return theme.colors.primary;

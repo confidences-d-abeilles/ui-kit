@@ -5,10 +5,8 @@ import styled from '@emotion/styled';
 import { Columns, Item } from '@cda/flex';
 
 const StyledRows = styled(Columns)`
-  min-width: 15rem;
   width: ${({ compact }) => compact ? '5rem' : null};
   overflow: visible;
-  margin-right: 1rem;
   
   div {
     z-index: 10;
@@ -18,7 +16,7 @@ const StyledRows = styled(Columns)`
 const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.colors.primary};
   display: flex;
-  width: ${({ compact }) => compact ? '3rem' : 'auto'};
+  width: ${({ compact }) => compact ? '5rem' : 'auto'};
   padding: 1rem;
   z-index: 1;
   cursor: pointer;
