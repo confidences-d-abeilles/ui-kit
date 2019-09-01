@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import { Columns, Item } from '@cda/flex';
 
 const StyledRows = styled(Columns)`
-  width: ${({ compact }) => compact ? '5rem' : null};
+  width: ${({ compact: isCompact }) => isCompact ? '5rem' : null};
   overflow: visible;
   
   div {
@@ -16,7 +16,7 @@ const StyledRows = styled(Columns)`
 const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.colors.primary};
   display: flex;
-  width: ${({ compact }) => compact ? '5rem' : 'auto'};
+  width: ${({ isCompact }) => isCompact ? '5rem' : 'auto'};
   padding: 1rem;
   z-index: 1;
   cursor: pointer;
@@ -25,7 +25,7 @@ const StyledLink = styled(Link)`
   :hover {
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.white};
-    width: ${({ compact }) => compact ? '15rem' : null};
+    width: ${({ isCompact }) => isCompact ? '15rem' : null};
     transition: 0.25s width ease-in-out;
   }
   
@@ -43,9 +43,8 @@ const StyledLink = styled(Link)`
 `;
 
 const Sidebar = ({ items, compact = true }) => (
-  <StyledRows compact={compact}>
-    {items.map(({ icon, label, link }) => <Item key={label} noGutter><StyledLink to={link}
-                                                                                 compact={compact}><FontAwesomeIcon
+  <StyledRows isCompact={compact}>
+    {items.map(({ icon, label, link }) => <Item key={label} noGutter><StyledLink to={link} isCompact={compact}><FontAwesomeIcon
       icon={icon} size="2x"/><p>{label}</p></StyledLink></Item>)}
   </StyledRows>
 );
