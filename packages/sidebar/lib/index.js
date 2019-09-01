@@ -40,15 +40,15 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var StyledRows = (0, _styled["default"])(_flex.Columns)(_templateObject(), function (_ref) {
-  var compact = _ref.compact;
-  return compact ? '5rem' : null;
+  var isCompact = _ref.isCompact;
+  return isCompact ? '5rem' : null;
 });
 var StyledLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject2(), function (_ref2) {
   var theme = _ref2.theme;
   return theme.colors.primary;
 }, function (_ref3) {
-  var compact = _ref3.compact;
-  return compact ? '5rem' : 'auto';
+  var isCompact = _ref3.isCompact;
+  return isCompact ? '5rem' : 'auto';
 }, function (_ref4) {
   var theme = _ref4.theme;
   return theme.colors.primary;
@@ -56,8 +56,8 @@ var StyledLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject2(
   var theme = _ref5.theme;
   return theme.colors.white;
 }, function (_ref6) {
-  var compact = _ref6.compact;
-  return compact ? '15rem' : null;
+  var isCompact = _ref6.isCompact;
+  return isCompact ? '15rem' : null;
 });
 
 var Sidebar = function Sidebar(_ref7) {
@@ -65,7 +65,7 @@ var Sidebar = function Sidebar(_ref7) {
       _ref7$compact = _ref7.compact,
       compact = _ref7$compact === void 0 ? true : _ref7$compact;
   return _react["default"].createElement(StyledRows, {
-    compact: compact
+    isCompact: compact
   }, items.map(function (_ref8) {
     var icon = _ref8.icon,
         label = _ref8.label,
@@ -75,7 +75,7 @@ var Sidebar = function Sidebar(_ref7) {
       noGutter: true
     }, _react["default"].createElement(StyledLink, {
       to: link,
-      compact: compact
+      isCompact: compact
     }, _react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
       icon: icon,
       size: "2x"
