@@ -13,7 +13,7 @@ const StyledRows = styled(Columns)`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link, { shouldForwardProp: prop => prop !== 'isCompact' })`
   color: ${({ theme }) => theme.colors.primary};
   display: flex;
   width: ${({ isCompact }) => isCompact ? '5rem' : 'auto'};

@@ -43,7 +43,11 @@ var StyledRows = (0, _styled["default"])(_flex.Columns)(_templateObject(), funct
   var isCompact = _ref.isCompact;
   return isCompact ? '5rem' : null;
 });
-var StyledLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject2(), function (_ref2) {
+var StyledLink = (0, _styled["default"])(_reactRouterDom.Link, {
+  shouldForwardProp: function shouldForwardProp(prop) {
+    return prop !== 'isCompact';
+  }
+})(_templateObject2(), function (_ref2) {
   var theme = _ref2.theme;
   return theme.colors.primary;
 }, function (_ref3) {
