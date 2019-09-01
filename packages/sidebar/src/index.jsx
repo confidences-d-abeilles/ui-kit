@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import { Columns, Item } from '@cda/flex';
 
 const StyledRows = styled(Columns)`
-  width: ${({ compact: isCompact }) => isCompact ? '5rem' : null};
+  width: ${({ isCompact }) => isCompact ? '5rem' : null};
   overflow: visible;
   
   div {
