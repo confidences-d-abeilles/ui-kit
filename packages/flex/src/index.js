@@ -20,4 +20,5 @@ export const Rows = styled.div`
   flex-direction: row;
   justify-content: ${({ justifyContent }) => justifyContent || 'initial'};
   align-items: ${({ alignItems }) => alignItems || 'initial'};
+  flex-wrap: ${({ wrap }) => wrap};
 `;

@@ -21,7 +21,7 @@ var ButtonLink = function ButtonLink(_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
 
-  return _react["default"].createElement(_link["default"], props, _react["default"].createElement(_button.Button, null, children));
+  return _react["default"].createElement(_link["default"], props, _react["default"].createElement(_button.Button, props, children));
 };
 
 var _default = ButtonLink;

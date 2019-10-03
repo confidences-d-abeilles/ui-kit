@@ -10,7 +10,7 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: ", ";\n  align-items: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: ", ";\n  align-items: ", ";\n  flex-wrap: ", ";\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -73,6 +73,9 @@ var Rows = _styled["default"].div(_templateObject3(), function (_ref7) {
 }, function (_ref8) {
   var alignItems = _ref8.alignItems;
   return alignItems || 'initial';
+}, function (_ref9) {
+  var wrap = _ref9.wrap;
+  return wrap;
 });
 
 exports.Rows = Rows;
