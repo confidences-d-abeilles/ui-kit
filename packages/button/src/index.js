@@ -6,7 +6,7 @@ export const Button = withTheme(styled('button')`
   margin: 0.125rem 0.5rem;
   display: inline-block;
   padding: 0.25rem 1rem;
-  border: ${({ primary, theme }) => primary ? 'none' : `solid 1px ${theme.colors.primary}`};
+  border: none;
   border-radius: 5px;
   transition: all 0.125s;
   cursor: pointer;
