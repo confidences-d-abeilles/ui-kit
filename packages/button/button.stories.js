@@ -8,17 +8,13 @@ import { Button } from '@cda/button';
 import theme from '@cda/theme';
 
 storiesOf('Button', module)
-  .add('primary', () => (
+  .add('all', () => (
     <ThemeProvider theme={theme}>
       <Button primary>
-        Example button
+        Example of primary button
       </Button>
-    </ThemeProvider>
-  ))
-  .add('secondary', () => (
-    <ThemeProvider theme={theme}>
       <Button>
-        Example button
+        Example of secondary button
       </Button>
     </ThemeProvider>
   ));
