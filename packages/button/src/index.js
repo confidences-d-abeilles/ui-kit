@@ -18,12 +18,12 @@ export const Button = withTheme(styled('button')`
     outline: none;
   }
   
-  color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.primary};
-  background-color: ${({ theme, primary }) => primary ? theme.colors.black : 'transparent'};
+  color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.white};
+  background-color: ${({ theme, primary }) => primary ? theme.colors.black : theme.colors.primary};
 
   &:hover, &:focus, &:active {
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ primary, theme }) => primary ? theme.colors.primary : theme.colors.white};
+    color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.primary};
   }
 `);
 

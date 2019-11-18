@@ -32,17 +32,19 @@ var Button = (0, _emotionTheming.withTheme)((0, _styled["default"])('button')(_t
 }, function (_ref2) {
   var primary = _ref2.primary,
       theme = _ref2.theme;
-  return primary ? theme.colors.white : theme.colors.primary;
+  return primary ? theme.colors.white : theme.colors.white;
 }, function (_ref3) {
   var theme = _ref3.theme,
       primary = _ref3.primary;
-  return primary ? theme.colors.black : 'transparent';
+  return primary ? theme.colors.black : theme.colors.primary;
 }, function (_ref4) {
-  var theme = _ref4.theme;
-  return theme.colors.primary;
+  var primary = _ref4.primary,
+      theme = _ref4.theme;
+  return primary ? theme.colors.primary : theme.colors.white;
 }, function (_ref5) {
-  var theme = _ref5.theme;
-  return theme.colors.white;
+  var primary = _ref5.primary,
+      theme = _ref5.theme;
+  return primary ? theme.colors.white : theme.colors.primary;
 }));
 exports.Button = Button;
 var _default = Button;
