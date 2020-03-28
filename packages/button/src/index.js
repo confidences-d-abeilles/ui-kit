@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
 
 export const Button = withTheme(styled('button')`
-  margin: 0.125rem 0.5rem;
+  margin: 0.5rem 1rem;
   display: inline-block;
   padding: 0.5rem 1.5rem;
   border: solid 1px ${({ theme, primary }) => primary ? 'transparent' : theme.colors.primary};
@@ -17,6 +17,7 @@ export const Button = withTheme(styled('button')`
   &:hover, &:focus, &:active {
     text-decoration: none;
     outline: none;
+    box-shadow: 2px 2px 5px silver;
   }
   
   color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.white};
