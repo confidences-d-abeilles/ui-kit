@@ -5,13 +5,14 @@ import { withTheme } from 'emotion-theming';
 export const Button = withTheme(styled('button')`
   margin: 0.125rem 0.5rem;
   display: inline-block;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: solid 1px ${({ theme, primary }) => primary ? 'transparent' : theme.colors.primary};
-  border-radius: 5px;
+  border-radius: 2rem;
   transition: all 0.125s;
   cursor: pointer;
   text-align: center;
   font-size: 1rem;
+  box-shadow: 5px 5px 10px silver;
 
   &:hover, &:focus, &:active {
     text-decoration: none;
