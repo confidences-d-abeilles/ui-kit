@@ -4,5 +4,5 @@
   ],
   "npmClient": "yarn",
   "useWorskpaces": true,
-  "version": "independant"
+  "version": "0.10.0"
 }
