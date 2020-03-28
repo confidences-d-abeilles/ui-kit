@@ -6,7 +6,8 @@ export const Button = withTheme(styled('button')`
   margin: 0.5rem 1rem;
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  border: solid 1px ${({ theme, primary }) => primary ? 'transparent' : theme.colors.primary};
+  border: none;
+  // border: solid 1px ${({ theme, primary }) => primary ? 'transparent' : theme.colors.primary};
   border-radius: 2rem;
   transition: all 0.125s;
   cursor: pointer;
@@ -20,12 +21,12 @@ export const Button = withTheme(styled('button')`
     box-shadow: 2px 2px 5px silver;
   }
   
-  color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.white};
-  background-color: ${({ theme, primary }) => primary ? theme.colors.black : theme.colors.primary};
+  color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.black};
+  background-color: ${({ theme, primary }) => primary ? theme.colors.primary : theme.colors.white};
 
   &:hover, &:focus, &:active {
-    background-color: ${({ primary, theme }) => primary ? theme.colors.primary : theme.colors.white};
-    color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.primary};
+    background-color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.white};
+    color: ${({ primary, theme }) => primary ? theme.colors.primary : theme.colors.primary};
   }
 `);
 
