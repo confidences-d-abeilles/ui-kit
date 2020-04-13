@@ -7,13 +7,12 @@ export const Button = withTheme(styled('button')`
   display: inline-block;
   padding: 0.5rem 1.5rem;
   border: none;
-  // border: solid 1px ${({ theme, primary }) => primary ? 'transparent' : theme.colors.primary};
   border-radius: 2rem;
   transition: all 0.125s;
   cursor: pointer;
   text-align: center;
   font-size: 1rem;
-  box-shadow: 5px 5px 10px silver;
+  box-shadow: ${({ flat }) =>  flat ? 'none' : '5px 5px 10px silver'};
 
   &:hover, &:focus, &:active {
     text-decoration: none;
