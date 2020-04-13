@@ -17,7 +17,7 @@ export const Button = withTheme(styled('button')`
   &:hover, &:focus, &:active {
     text-decoration: none;
     outline: none;
-    box-shadow: 2px 2px 5px silver;
+    box-shadow: ${({ flat }) =>  flat ? 'none' : '2px 2px 5px silver'};
   }
   
   color: ${({ primary, theme }) => primary ? theme.colors.white : theme.colors.black};
