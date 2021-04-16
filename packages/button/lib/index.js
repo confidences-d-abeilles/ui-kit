@@ -11,21 +11,13 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _emotionTheming = require("emotion-theming");
 
+var _templateObject;
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0.5rem 1rem;\n  display: inline-block;\n  padding: 0.5rem 1.5rem;\n  border: none;\n  border-radius: 2rem;\n  transition: all 0.125s;\n  cursor: pointer;\n  text-align: center;\n  font-size: 1rem;\n  box-shadow: ", ";\n\n  &:hover, &:focus, &:active {\n    text-decoration: none;\n    outline: none;\n    box-shadow: ", ";\n  }\n  \n  color: ", ";\n  background-color: ", ";\n\n  &:hover, &:focus, &:active {\n    background-color: ", ";\n    color: ", ";\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Button = (0, _emotionTheming.withTheme)((0, _styled["default"])('button')(_templateObject(), function (_ref) {
+var Button = (0, _emotionTheming.withTheme)((0, _styled["default"])('button')(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 0.5rem 1rem;\n  display: inline-block;\n  padding: 0.5rem 1.5rem;\n  border: none;\n  border-radius: 2rem;\n  transition: all 0.125s;\n  cursor: pointer;\n  text-align: center;\n  font-size: 1rem;\n  box-shadow: ", ";\n\n  &:hover, &:focus, &:active {\n    text-decoration: none;\n    outline: none;\n    box-shadow: ", ";\n  }\n  \n  color: ", ";\n  background-color: ", ";\n\n  &:hover, &:focus, &:active {\n    background-color: ", ";\n    color: ", ";\n  }\n"])), function (_ref) {
   var flat = _ref.flat;
   return flat ? 'none' : '5px 5px 10px silver';
 }, function (_ref2) {

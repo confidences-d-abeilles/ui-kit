@@ -13,32 +13,14 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styled = _interopRequireDefault(require("@emotion/styled"));
 
+var _templateObject, _templateObject2;
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  color: black;\n  text-decoration: none;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  cursor: pointer;\n  color: black;\n  text-decoration: none;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var StyleLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject());
-var StyledAnchor = (0, _styled["default"])('a')(_templateObject2());
+var StyleLink = (0, _styled["default"])(_reactRouterDom.Link)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  cursor: pointer;\n  color: black;\n  text-decoration: none;\n"])));
+var StyledAnchor = (0, _styled["default"])('a')(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: black;\n  text-decoration: none;\n"])));
 
 var MyLink = function MyLink(_ref) {
   var to = _ref.to,
@@ -46,13 +28,13 @@ var MyLink = function MyLink(_ref) {
       className = _ref.className,
       children = _ref.children,
       dataCy = _ref['data-cy'];
-  return external ? _react["default"].createElement(StyledAnchor, {
+  return external ? /*#__PURE__*/_react["default"].createElement(StyledAnchor, {
     href: to,
     target: "_blank",
     rel: "noopener noreferrer",
     "data-cy": dataCy,
     className: className
-  }, children || url, "\xA0") : _react["default"].createElement(StyleLink, {
+  }, children || url, "\xA0") : /*#__PURE__*/_react["default"].createElement(StyleLink, {
     to: to,
     className: className,
     "data-cy": dataCy
