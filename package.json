@@ -10,11 +10,11 @@
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-links": "^5.1.9",
-    "@storybook/react": "^5.1.9",
+    "@storybook/addon-actions": "6.2.8",
+    "@storybook/addon-links": "6.2.8",
+    "@storybook/react": "6.2.8",
     "babel-loader": "^8.0.6",
-    "lerna": "^3.20.2",
+    "lerna": "4.0.0",
     "webpack": "^4.42.1"
   },
   "scripts": {
